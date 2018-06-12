@@ -8,6 +8,7 @@ class Owner
     def initialize(owner)
         @@all << self
         @species = "human"
+        @pets = {fishes: [], cats: [], dogs: []}
     end
 
     def self.all
