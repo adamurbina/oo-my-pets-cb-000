@@ -3,7 +3,7 @@ class Owner
     @@all = []
 
     def initialize(owner)
-        self.all << owner
+        @@all << owner
     end
 
     def self.all
