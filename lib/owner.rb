@@ -3,7 +3,7 @@ class Owner
     @@all = []
 
     def initialize
-        self.all << self
+        add_owner
     end
 
     def add_owner
