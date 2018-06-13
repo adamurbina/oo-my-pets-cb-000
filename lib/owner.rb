@@ -58,7 +58,9 @@ class Owner
     end
 
     def sell_pets
-        @pets.each {|type, pet| @pets[type] = []}
+        @pets.each {|type, pet|
+            pet.each {|pet| pet.mood = "nervous"}
+            @pets[type] = []}
     end
 
     def list_pets
